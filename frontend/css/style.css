@@ -5,10 +5,19 @@
  */
 
 /* --- Базовые стили и переменные --- */
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root {
     --primary-color: #007bff;
     --text-color: #333;
     --background-light: #ffffff;
+    --background-dark: #;
     --background-gray: #f8f9fa;
     --background-dark: #343a40;
 }
@@ -17,13 +26,13 @@ body {
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background-color: var(--background-light);
+    background-color: #070710;
     margin: 0; /* normalize.css обрабатывает большую часть, но margin: 0 для body никогда не помешает */
 }
 
 /* --- Общие стили для всех секций --- */
 section {
-    padding: 80px 20px; 
+    /* padding: 80px 20px; */
     margin: 0;
     margin-bottom: 150px;
 }
@@ -40,9 +49,8 @@ img {
 }
 
 .container {
-    max-width: 1920px; /* Максимальная ширина контента (часто 1140px, 1200px или 1400px) */
+    max-width: 1760px; /* Максимальная ширина контента (часто 1140px, 1200px или 1400px) */
     margin: 0 auto;    /* Центрирует контейнер на странице (устанавливает равные отступы слева и справа) */
-    padding: 0 15px;   /* Отступы по бокам для мобильных устройств, чтобы контент не прилипал к краям */
     width: 100%;       /* Гарантирует, что контейнер занимает всю доступную ширину до max-width */
 }
 
@@ -54,21 +62,28 @@ img {
     justify-content: space-between; 
     align-items: center;
     /* Убираем padding из #header, так как теперь его обрабатывает .container padding: 0 15px */
-    padding: 0; 
+    padding: 0;
+    
 }
 
 /* Сама секция #header остается только для фона и границ */
 #header {
-    background-color: var(--background-light); 
-    border-bottom: 1px solid #eee;
     /* Убираем старые паддинги, которые конфликтовали бы с контейнером */
-    padding: 15px 0; 
+    display: flex;
+    align-items: center;
+    height: 62px;
+    /* padding: 15px 0; */
+    margin-bottom: 48px;
+    background-color: #190621; 
+    border-bottom: 1px solid #81007F;
+    font-family: 'Inter', sans-serif;
+    color: #BFBFBF;
 }
 
 /* Общее правило: убираем подчеркивание у всех ссылок внутри хедера */
 #header a {
     text-decoration: none; /* <-- ЭТО УБИРАЕТ ПОДЧЕРКИВАНИЕ */
-    color: var(--text-color); /* Делаем текст ссылок темным */
+    color: #BFBFBF; /* Делаем текст ссылок темным */
     transition: color 0.3s ease;
 }
 
@@ -106,15 +121,17 @@ nav {
 
 /* Секция 1: Главный экран (Hero Section) */
 #hero {
-    background-color: #e9ecef;
-    min-height: 80vh; 
+    /* background-color: #e9ecef; */
+    /* min-height: 80vh;  */
     
     /* Активируем Flexbox для центрирования всего контента внутри секции */
     display: block;
+    margin-bottom: 100px;
 }
 
 .hero_content {
     display: flex;
+    justify-content: space-around;
 }
 
 .hero-img {
@@ -132,13 +149,9 @@ nav {
 
 /* Секция 2: Преимущества/Особенности */
 #features {
-    background-color: var(--background-light);
+    /* background-color: var(--background-light); */
 }
 
-/* 
- * Контейнер для карточек внутри секции Features 
- * (Предполагается, что в HTML есть <div class="features-container">)
- */
 .features-container {
     /* Активируем Flexbox для расположения карточек в ряд */
     display: flex;
@@ -158,6 +171,23 @@ nav {
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
+.features-img {
+    max-width: 870px;
+    aspect-ratio: 870 / 432;
+}
+
+.features_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features_content_right {
+    max-width: 870px;
+}
+
+ul {
+    list-style-type: none;
+}
 
 /* Секция 3: Описание процесса работы */
 #how-it-works {
