@@ -23,6 +23,11 @@
   /* border: 1px solid #81007F; */ /* Удалено для сквозных линий */
   /* border-radius: 14px; */ /* Удалено для сквозных линий */
   margin-bottom: 19px;
+  position: relative;
+}
+
+.svg {
+  position: absolute;
 }
 
 .pricing_item_header, .plan_header {
@@ -37,7 +42,7 @@
 .plan_header {
   padding: 8px 0px 8px 0px;
   background-color: #9640C1;
-  /* border-radius: 14px 14px 0 0; */ /* Удалено для сквозных линий */
+  border-radius: 14px 14px 0 0;
   text-align: center;
 }
 
@@ -79,7 +84,7 @@
 
 .plan_pricing:last-child {
   text-align: center;
-  /* border-radius: 0 0 14px 14px;  */
+  border-radius: 0 0 14px 14px; 
   background-color: #190621;
 }
 
