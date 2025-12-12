@@ -243,7 +243,29 @@
     <section class="section_contact" id="cont">
       <div class="container">
         <div class="contact_content">
-
+          <div class="cont_content_left">
+            <h1 class="section-title form-title">получить консультацию</h1>
+            <form class="contact_form" role="form" aria-label="форма обратной связи">
+              <label for="email">Email</label>
+              <input type="email" name="email" placeholder="Email" required>
+              <label for="company">Компания</label>
+              <input type="text" name="company" placeholder="Компания" required>
+              <label for="phone">Телефон</label>
+              <input type="tel" name="phone" placeholder="Телефон" required>
+              <label for="description">Краткое описание задачи</label>
+              <textarea name="description" placeholder="Краткое описание задачи" required></textarea>
+              <div class="form-buttons">
+                <button type="submit" class="button primary-btn">Отправить</button>
+                <button type="button" class="button secondary-btn" onclick="window.open('https://t.me/maksimfalev','_blank')">Связаться в Telegram</button>
+              </div>
+            </form>
+          </div>
+          <div class="cont_content_right">
+            <img class="contact-img" src="./img/contact_1920.png" alt="contact-img">
+            <h4 class="cont_content_rigth_title">Или свяжитесь с нами напрямую:</h4>
+            <a href="mailto:sales@voxFlow.example">sales@voxFlow.example</a><br/>
+            <a href="tel:+79211769883">+7 (921) 176-98-83</a>
+          </div>
         </div>
       </div>
     </section>

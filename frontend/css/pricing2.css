@@ -5,6 +5,10 @@
   font-style: normal;
 }
 
+.section_pricing {
+  margin-bottom: 300px;
+}
+
 .pricing_content {
     display: flex;
     flex-direction: row;

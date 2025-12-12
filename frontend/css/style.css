@@ -99,7 +99,7 @@ input[type="submit"] {
 
 .button {
     padding: 10px 15px;
-    padding-bottom: 33px;
+    /* padding-bottom: 33px; */
     cursor: pointer;
     color: #ffffff;
     background-color: #000398;
@@ -292,6 +292,116 @@ ul {
 
 ul svg {
     margin-right: 4px;
+}
+
+/* Секция форма обратной связи */
+
+.contact_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont_content_left {
+    max-width: 840px;
+    margin-right: 50px;
+    flex-grow: 1;
+}
+
+.cont_content_rigth_title {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    font-size: 32px;
+    line-height: 1.5;
+    color: #BFBFBF;
+}
+
+.cont_content_right a {
+    text-decoration: none; /* <-- ЭТО УБИРАЕТ ПОДЧЕРКИВАНИЕ */
+    color: #BFBFBF; /* Делаем текст ссылок темным */
+    transition: color 0.3s ease;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #BFBFBF;
+}
+
+.cont_content_right a:hover {
+    color: var(--primary-color);
+}
+
+.contact-img {
+    margin-bottom: 10px;
+    max-width: 870px;
+    aspect-ratio: 870 / 404;
+}
+
+.form-title {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+form label {
+    display: block; /* Делает label блочным элементом */
+    margin-bottom: 5px;
+    font-weight: bold; /* Делает текст надписи жирным */
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+    color: #BFBFBF;
+}
+
+form input::placeholder
+form textarea::placeholder {
+    padding: 20px 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+    color: #CACACA;
+    opacity: 0.5;
+}
+
+input,
+textarea {
+  background-color: #190621;
+  border: 1px solid #9640C1;
+  color: #e6e1ff;
+  border-radius: 12px;
+  padding: 12px;
+  width: 100%;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  font-family: "Orbitron", sans-serif;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #7a75a0;
+}
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-buttons {
+    display: flex;
+    width: 100%;
+
+}
+
+.primary-btn {
+    margin-right: 20px;
+}
+
+.primary-btn,
+.secondary-btn {
+    height: 38px;
+    flex-grow: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /* Секция 3: Описание процесса работы */
