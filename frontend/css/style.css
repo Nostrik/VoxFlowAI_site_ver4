@@ -234,7 +234,7 @@ nav a:last-child {
     margin-bottom: 30px;
 }
 
-.primary-btn {
+.hero-btn {
     width: 295px;
     height: 38px;
 }
@@ -302,8 +302,8 @@ ul svg {
 }
 
 .cont_content_left {
-    max-width: 840px;
-    margin-right: 50px;
+    max-width: 870px;
+    margin-right: 20px;
     flex-grow: 1;
 }
 
@@ -367,16 +367,17 @@ form textarea::placeholder {
 
 input,
 textarea {
-  background-color: #190621;
-  border: 1px solid #9640C1;
-  color: #e6e1ff;
-  border-radius: 12px;
-  padding: 12px;
-  width: 100%;
-  margin-bottom: 12px;
-  font-size: 0.95rem;
-  font-family: "Orbitron", sans-serif;
-}
+    box-sizing: border-box;
+    background-color: #190621;
+    border: 1px solid #9640C1;
+    color: #e6e1ff;
+    border-radius: 12px;
+    padding: 12px;
+    width: 100%;
+    margin-bottom: 19px;
+    font-size: 0.95rem;
+    font-family: "Orbitron", sans-serif;
+    }
 input::placeholder,
 textarea::placeholder {
   color: #7a75a0;
@@ -384,6 +385,7 @@ textarea::placeholder {
 textarea {
   resize: vertical;
   min-height: 100px;
+  margin-bottom: 20px;
 }
 
 .form-buttons {
@@ -398,16 +400,112 @@ textarea {
 
 .primary-btn,
 .secondary-btn {
+    display: block;
+    width: 100%;
     height: 38px;
     flex-grow: 1;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
 }
 
-/* Секция 3: Описание процесса работы */
-#how-it-works {
-    background-color: var(--background-gray);
-    /* Здесь можно использовать тот же подход, что и в features-container */
+/* Секция 3: Этапы работы */
+.workflow_content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.workflow_content h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 1.5;
+    color: #BFBFBF;
+}
+
+.workflow_content p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #BFBFBF;
+}
+
+.workflow-step {
+    margin-right: 10px;
+    margin-left: 46px;
+    width: 181.14px;
+    height: 410px;
+    /* border: 1px solid white; */
+}
+
+.workflow_content .workflow-step:first-child {
+    margin-left: 0;
+}
+
+.workflow_content .workflow-step:last-child {
+    margin-right: 0;
+}
+
+.step-number {
+    font-family: 'Space-Grotesk', sans-serif;
+    font-weight: 200;
+    font-size: 100px;
+    line-height: 0.8;
+    color: #9640C1;
+}
+
+.workflow-step-wrapper {
+    height: 201px;
+    border-bottom: 1px solid #81007F;
+}
+
+.arrow {
+    padding-top: 50px;
+}
+
+/* Секция О нас */
+.about_us_content {
+    padding: 20px 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.about_us_right {
+    max-width: 870px;
+}
+
+.about_us_left img {
+    max-width: 870px;
+    aspect-ratio: 870 / 275;
+}
+
+.card-description {
+    margin-bottom: 27.5px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 1.3;
+    color: #BFBFBF;
+    border-bottom: 1px solid #81007F;
+}
+
+.partner-text {
+    margin-right: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 1.5;
+    color: #BFBFBF;
+}
+
+.partner-section {
+    display: flex;
+}
+
+.partner-logo img {
+    width: 101px;
+    height: 37px;
 }
 
 /* Секция 4: Отзывы клиентов */
